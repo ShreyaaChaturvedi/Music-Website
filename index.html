@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./css/amwcopy.css">
+</head>
+<body>
+    <div class="full-page">
+        <nav> 
+            <ul id = 'MenuItems'>
+                <li> <a href = './pages/audio.html'> My Gallery </a></li>
+                <li> <a href ='aboutus.txt'> About Us</a></li>
+                <!--<li> <a href ='#'> Services </a> </li>
+                <li> <a href = '#'> Contact </a></li>-->
+                <li> <a href = './pages/login1.html'> Login </a></li>
+                <!--<li> <button class='loginbtn' onclick="document.getElementById('Login').style.display='block'" style="width:auto;"> Login </button> </li>-->
+                <!-- input tag -->
+                <input id="searchbar" onkeyup="search_song()" type="text" name="search" placeholder="Search Song...">
+           
+        </nav>
+    </div>
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+            <a href="/.css/sidebar.css" class="closebtn" onclick="closeNav()">&times;</a>
+           <!--profile image & text-->
+           <div class="profile">
+            <img src="/imgs/node.jpg" alt="profile_picture">
+            <h3> Music Gallery</h3>
+            <p></p>
+            <!--menu item-->
+            <ul>
+                <li>
+                    <a href="trending.html" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Trending</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trendingreels.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Reels Trending </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./pages/New Songs.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">New Songs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/Evergreen.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Romantic Songs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="trending.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">Party Songs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/Evergreen.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">Evergreen Songs</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/hollywood.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">Hollywood</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/audio.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">My Music</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+    
+      </script>
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>About Us</h3>
+                  <p>We are a music website dedicated to bringing you the latest news,<br>
+                     reviews, and interviews in the music industry.</p>
+                </div><br>
+                <div class="col-md-3">
+                  <h3>Navigation</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Interviews</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <h3>Contact Us</h3>
+                  <ul>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+ </body>
+</html>
+      
+
+  
+
+
